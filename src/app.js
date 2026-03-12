@@ -17,6 +17,35 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 
+app.get("/about", (req, res) => {
+    res.render("about")
+})
+
+app.get("/404", (req, res) => {
+    res.render("404")
+})
+
+app.get("/menu", (req, res) => {
+    res.render("menu")
+})
+
+app.get("/testimonial", (req, res) => {
+    res.render("testimonial")
+})
+
+app.get("/contact", (req, res) => {
+    res.render("contact")
+})
+
+app.get("/blog", (req, res) => {
+    res.render("blog")
+})
+
+app.get("/team", (req, res) => {
+    res.render("team")
+})
+
+
 app.listen(port, () => {
     console.log(
         `App listening in http://localhost:${port}`
